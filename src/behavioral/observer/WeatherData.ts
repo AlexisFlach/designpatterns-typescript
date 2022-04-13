@@ -3,9 +3,9 @@ import { ISubject } from './interfaces/Subject';
 
 export class WeatherData implements ISubject {
   private readonly _observers: IObserver[];
-  private _temperature: number = 0;
-  private _humidity: number = 0;
-  private _pressure: number = 0;
+  private _temperature: number;
+  private _humidity: number;
+  private _pressure: number;
 
   constructor() {
     this._observers = new Array<IObserver>();
