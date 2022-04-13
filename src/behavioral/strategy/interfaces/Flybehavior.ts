@@ -1,3 +1,3 @@
 export interface IFlyBehavior {
-  fly: () => void;
+  fly: () => string;
 }

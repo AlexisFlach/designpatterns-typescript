@@ -1,3 +1,3 @@
 export interface IQuackBehavior {
-  quack: () => void;  
+  quack: () => string;
 }

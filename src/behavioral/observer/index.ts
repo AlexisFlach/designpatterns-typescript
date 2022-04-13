@@ -1,10 +1,11 @@
 import { CurrentConditionsDisplay } from './CurrentConditionsDisplay';
 import { WeatherData } from './WeatherData';
 
-export const main = () => {
+export const display = (function () {
   const wd = new WeatherData();
-  const ccd = new CurrentConditionsDisplay(wd);
-  wd.setMeasurements(100, 100, 100);
+  const currentConditionsDisplay = new CurrentConditionsDisplay(wd);
 
-  return ccd.display();
-};
+  return {
+    currentConditionsDisplay,
+  };
+})();
